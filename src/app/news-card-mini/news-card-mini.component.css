@@ -7,6 +7,7 @@ a {
   max-height: 7rem;
   display: flex;
   cursor: pointer;
+
 }
 
 .mini img {
@@ -22,12 +23,25 @@ a {
 }
 
 .mini-details {
-  height: fit-content;
-  
+  flex-grow: 1;
+  display: flex;
+  position: relative;
   padding-left: .5rem;
   color: black;
 }
 
 .mini-title:hover {
   text-decoration: underline;
+}
+
+.published-on {
+  position: absolute;
+  bottom: 0;
+  left: .5rem;
+  font-size: .8rem;
+}
+
+.title {
+  max-height: 4rem;
+  overflow: hidden;
 }

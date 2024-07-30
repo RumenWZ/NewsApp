@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { NewsArticle } from '../models/news';
 import { CommonModule } from '@angular/common';
+import { DateService } from '../services/date.service';
 
 @Component({
   selector: 'app-news-card-mini',
@@ -11,9 +12,15 @@ import { CommonModule } from '@angular/common';
 })
 export class NewsCardMiniComponent {
   @Input() article!: NewsArticle;
+  publishedOn!: string;
+  publishedTimeAgo!: string;
 
+  constructor(
+    private dateService: DateService
+  ) {}
 
-  constructor() {}
-
-
+  ngOnInit() {
+    this.publishedOn = this.dateService.formatDate(this.article.publishedAt);
+    this.publishedTimeAgo = this.dateService.calculateTimeAgo(this.article.publishedAt);
+  }
 }

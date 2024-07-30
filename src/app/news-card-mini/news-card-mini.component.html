@@ -3,8 +3,8 @@
     <img *ngIf="article.urlToImage" [src]="article.urlToImage">
     <img *ngIf="!article.urlToImage" src="assets/images/news1.png">
     <div class="mini-details">
-      {{article.title}}
-      <div>Published on: </div>
+      <div class="title">{{article.title}}</div>
+      <div class="published-on">Published on: {{publishedOn}} ({{publishedTimeAgo}})</div>
     </div>
   </div>
 </a>

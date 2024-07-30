@@ -3,28 +3,15 @@ import { NewsArticle } from "../models/news";
 export const news: NewsArticle[] = [
   {
       "source": {
-          "id": null,
-          "name": "[Removed]"
-      },
-      "author": null,
-      "title": "[Removed]",
-      "description": "[Removed]",
-      "url": "https://removed.com",
-      "urlToImage": "",
-      "publishedAt": "1970-01-01T00:00:00Z",
-      "content": "[Removed]"
-  },
-  {
-      "source": {
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "The Jerusalem Post",
-      "title": "Putin warns the United States over missiles in Germany - The Jerusalem Post",
+      "author": "24 часа ",
+      "title": "Министър Стоянов: Как така на петия ден се появи свидетел на трагедията в Елин Пелин и отиде в телевизията? - 24 часа ",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3Lmpwb3N0LmNvbS9icmVha2luZy1uZXdzL2FydGljbGUtODEyMTc10gEA?oc=5",
-      "urlToImage": "https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg",
-      "publishedAt": "2024-07-28T08:41:22Z",
+      "url": "https://news.google.com/rss/articles/CBMiMGh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvYnVsZ2FyaWEvYXJ0aWNsZS8xODUyNzcxONIBAA?oc=5",
+      "urlToImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2112588.jpg&f=1&nofb=1&ipt=a55c4d6db6fd58b37c481bcdb6d4dc604f5e9e2ba27982de6892a892081c194a&ipo=images",
+      "publishedAt": "2024-07-29T09:17:00Z",
       "content": null
   },
   {
@@ -32,25 +19,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "CNN",
-      "title": "US to reconfigure military forces in Japan as regional tensions mount - CNN",
+      "author": "Vesti.bg - Новини от България и света",
+      "title": "Взрив в завод край Свищов - Vesti.bg - Новини от България и света",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiXmh0dHBzOi8vd3d3LmNubi5jb20vMjAyNC8wNy8yNy9hc2lhL3VzLWF1c3Rpbi10cmlsYXRlcmFsLWphcGFuLXNvdXRoLWtvcmVhLWludGwtaG5rL2luZGV4Lmh0bWzSAVdodHRwczovL2FtcC5jbm4uY29tL2Nubi8yMDI0LzA3LzI3L2FzaWEvdXMtYXVzdGluLXRyaWxhdGVyYWwtamFwYW4tc291dGgta29yZWEtaW50bC1obms?oc=5",
-      "urlToImage": "https://cdn.pixabay.com/photo/2022/08/25/05/53/sea-7409361_960_720.jpg",
-      "publishedAt": "2024-07-28T08:31:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "BBC.com",
-      "title": "Golan Heights attack: Israel hits Hezbollah targets after football pitch attack - BBC.com",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiLmh0dHBzOi8vd3d3LmJiYy5jb20vbmV3cy9hcnRpY2xlcy9jMjlkeWR6ODRuZ2_SATJodHRwczovL3d3dy5iYmMuY29tL25ld3MvYXJ0aWNsZXMvYzI5ZHlkejg0bmdvLmFtcA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiQWh0dHBzOi8vd3d3LnZlc3RpLmJnL2J1bGdhcmlhL3Z6cml2LXYtemF2b2Qta3Jhai1zdmlzaHRvdi02MjA0ODc20gEA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T08:10:26Z",
+      "publishedAt": "2024-07-29T09:06:00Z",
       "content": null
   },
   {
@@ -58,12 +32,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "USA TODAY",
-      "title": "Olympic gymnastics live updates: Simone Biles results, Team USA scores, highlights - USA TODAY",
+      "author": "ДНЕВНИК",
+      "title": "Зам.-кметът на София Никола Лютов: Симулативен спор спря премахването на хотела на Румен Гайтански - ДНЕВНИК",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMib2h0dHBzOi8vd3d3LnVzYXRvZGF5LmNvbS9zdG9yeS9zcG9ydHMvb2x5bXBpY3MvMjAyNC8wNy8yOC9neW1uYXN0aWNzLW9seW1waWNzLXJlc3VsdHMtbGl2ZS11cGRhdGVzLzc0MTkyOTI1MDA3L9IBAA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiZWh0dHBzOi8vbS5kbmV2bmlrLmJnL2ludGVydmp1LzIwMjQvMDcvMjkvNDY1NjQxNl96YW0ta21ldHV0X25hX3NvZmlpYV9uaWtvbGFfbGp1dG92X3NpbXVsYXRpdmVuX3Nwb3Iv0gEA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T07:52:30Z",
+      "publishedAt": "2024-07-29T09:02:03Z",
       "content": null
   },
   {
@@ -71,12 +45,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "The New York Times",
-      "title": "Lithium Battery Fire Traps Drivers in Sweltering Heat on California Highway - The New York Times",
+      "author": "Life.dir.bg",
+      "title": "Стана ясна причината за смъртта на Шиниъд О'Kонър - Life.dir.bg",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiUWh0dHBzOi8vd3d3Lm55dGltZXMuY29tLzIwMjQvMDcvMjcvdXMvYmF0dGVyeS1maXJlLXRyYWZmaWMtbmV2YWRhLWNhbGlmb3JuaWEuaHRtbNIBAA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiT2h0dHBzOi8vbGlmZS5kaXIuYmcvenZlemRpL3N0YW5hLXlhc25hLXByaWNoaW5hdGEtemEtc21hcnR0YS1uYS1zaGluaWFkLW8ta29uYXLSAQA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T07:28:20Z",
+      "publishedAt": "2024-07-29T08:57:09Z",
       "content": null
   },
   {
@@ -84,12 +58,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "CNN",
-      "title": "Black women are quickly joining forces to support Kamala Harris’ presidential bid. Here’s what that looks like - CNN",
+      "author": "Gol.bg",
+      "title": "Третото появяване на Ендрик на \"Бернабеу\": Това е лудост! - Gol.bg",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiT2h0dHBzOi8vd3d3LmNubi5jb20vMjAyNC8wNy8yOC91cy9ibGFjay13b21lbi1rYW1hbGEtaGFycmlzLWNhbXBhaWduL2luZGV4Lmh0bWzSAUhodHRwczovL2FtcC5jbm4uY29tL2Nubi8yMDI0LzA3LzI4L3VzL2JsYWNrLXdvbWVuLWthbWFsYS1oYXJyaXMtY2FtcGFpZ24?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiYmh0dHBzOi8vd3d3LmdvbC5iZy9hLzExMC1yZWFsbWFkcmlkLzQwMDk1My10cmV0b3RvLXBveWF2eWF2YW5lLW5hLWVuZHJpay1uYS1iZXJuYWJldS10b3ZhLWUtbHVkb3N00gFmaHR0cHM6Ly93d3cuZ29sLmJnL2EvMTEwLXJlYWxtYWRyaWQvNDAwOTUzLXRyZXRvdG8tcG95YXZ5YXZhbmUtbmEtZW5kcmlrLW5hLWJlcm5hYmV1LXRvdmEtZS1sdWRvc3QvYW1w?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T07:00:00Z",
+      "publishedAt": "2024-07-29T08:19:58Z",
       "content": null
   },
   {
@@ -97,38 +71,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "E! NEWS",
-      "title": "Inside Tatum Thompson's Precious World With Mom Khloe Kardashian, Dad Tristan Thompson and Sister True - E! NEWS",
+      "author": "btvnovinite.bg",
+      "title": "Ердоган: Турция може да влезе в Израел. Кац: Ердоган следва стъпките на Саддам Хюсеин - btvnovinite.bg",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiiQFodHRwczovL3d3dy5lb25saW5lLmNvbS9uZXdzLzE0MDU0MjYvaW5zaWRlLXRhdHVtLXRob21wc29ucy1wcmVjaW91cy13b3JsZC13aXRoLW1vbS1raGxvZS1rYXJkYXNoaWFuLWRhZC10cmlzdGFuLXRob21wc29uLWFuZC1zaXN0ZXItdHJ1ZdIBAA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-28T07:00:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": null,
-          "name": "The Official Website of the Ultimate Fighting Championship"
-      },
-      "author": null,
-      "title": "Main Card Results | UFC 304: Edwards vs Muhammad 2 - UFC",
-      "description": "See The Fight Results, Watch Post-Fight Interviews With The Main Card Winners And More From UFC 304: Edwards vs Muhammad 2, Live From Co-op Live In Manchester, England",
-      "url": "https://www.ufc.com/news/main-card-results-highlights-winner-interviews-ufc-304-edwards-vs-muhammad-2",
-      "urlToImage": "https://dmxg5wxfqgb4u.cloudfront.net/styles/card/s3/2024-06/072724-ufc-304-edwards-vs-muhammad-2-EVENT-ART.jpg?itok=vCE0Q1Fs",
-      "publishedAt": "2024-07-28T05:37:30Z",
-      "content": "And in the final round, Muhammad went right back to the well, walking Edwards behind the tram line, changing levels, and taking him down, working to his back and withstanding the late barrage that le… [+393 chars]"
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "CNN",
-      "title": "Trump and Harris enter final 100-day stretch of a rapidly evolving 2024 race - CNN",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiUWh0dHBzOi8vd3d3LmNubi5jb20vMjAyNC8wNy8yOC9wb2xpdGljcy90cnVtcC1oYXJyaXMtZWxlY3Rpb24tMTAwLWRheXMvaW5kZXguaHRtbNIBSmh0dHBzOi8vYW1wLmNubi5jb20vY25uLzIwMjQvMDcvMjgvcG9saXRpY3MvdHJ1bXAtaGFycmlzLWVsZWN0aW9uLTEwMC1kYXlz?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-28T05:33:00Z",
+      "url": "https://news.google.com/rss/articles/CBMieGh0dHBzOi8vYnR2bm92aW5pdGUuYmcvc3ZldHV0L2VyZG9nYW4tdHVyY2lqYS1tb3poZS1kYS12bGV6ZS12LWl6cmFlbC1rYWMtZXJkb2dhbi1zbGVkdmEtc3RhcGtpdGUtbmEtc2FkZGFtLWhqdXNlaW4uaHRtbNIBAA?oc=5",
+      "urlToImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd.newsweek.com%2Fen%2Ffull%2F500082%2Fturkish-president-recep-tayyip-erdogan.jpg&f=1&nofb=1&ipt=92b2c306056aee9069d15d6a38b9fcbc8aa993ac7fb53d811706076ee22c976d&ipo=images",
+      "publishedAt": "2024-07-29T08:14:31Z",
       "content": null
   },
   {
@@ -136,12 +84,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "The Associated Press",
-      "title": "All he does is win gold medals: Caeleb Dressel captures 8th gold as anchor of US relay team - The Associated Press",
+      "author": "News.bg",
+      "title": "Мъж уби бившата си приятелка в хотел в Пазарджик - News.bg",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiXmh0dHBzOi8vYXBuZXdzLmNvbS9hcnRpY2xlL29seW1waWNzLTIwMjQtY2FlbGViLWRyZXNzZWwtcmVsYXktYTY0MjlkNjY2OGMwYTI3YjViNmNlZDI0MGQ0MjUwMmXSAQA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiT2h0dHBzOi8vbmV3cy5iZy9jcmltZS9tYXpoLXViaS1iaXZzaGF0YS1zaS1wcml5YXRlbGthLXYtaG90ZWwtdi1wYXphcmR6aGlrLmh0bWzSAQA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T05:29:00Z",
+      "publishedAt": "2024-07-29T08:14:00Z",
       "content": null
   },
   {
@@ -149,51 +97,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "The Wall Street Journal",
-      "title": "A Fed Rate Cut Is Finally Within View - The Wall Street Journal",
+      "author": "Факти",
+      "title": "„Съкрушителни и необратими резултати“: Мадуро печели отново във Венецуела ᐉ Новини от Fakti.bg - Свят - Факти",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiT2h0dHBzOi8vd3d3Lndzai5jb20vZWNvbm9teS9jZW50cmFsLWJhbmtpbmcvZmVkLW5lYXItaW50ZXJlc3QtcmF0ZS1jdXQtZDMwM2RiZDXSAQA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiZmh0dHBzOi8vZmFrdGkuYmcvd29ybGQvOTAwNTIyLXNha3J1c2hpdGVsbmktaS1uZW9icmF0aW1pLXJlenVsdGF0aS1tYWR1cm8tcGVjaGVsaS1vdG5vdm8tdmF2LXZlbmVjdWVsYdIBAA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T04:02:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": null,
-          "name": "DW (English)"
-      },
-      "author": "Deutsche Welle",
-      "title": "Donald Trump appeals to crypto investors at conference - DW (English)",
-      "description": "Trump said he wants the US to become the \"crypto capital of the planet\" and a \"bitcoin superpower.\"",
-      "url": "https://www.dw.com/en/donald-trump-appeals-to-crypto-investors-at-conference/a-69789647",
-      "urlToImage": "https://static.dw.com/image/69219351_6.jpg",
-      "publishedAt": "2024-07-28T03:21:22Z",
-      "content": "Republican presidential candidate Donald Trump on Saturday shared his plans to promote cryptocurrency if he gets elected for a second term and said he wants the US to become a \"bitcoin superpower\" un… [+1631 chars]"
-  },
-  {
-      "source": {
-          "id": "politico",
-          "name": "Politico"
-      },
-      "author": null,
-      "title": "Trump tries to sharpen Harris attacks as she blunts his momentum - POLITICO",
-      "description": "The former president often found himself reverting to his favorite Joe Biden attack lines.",
-      "url": "https://www.politico.com/news/2024/07/27/trump-harris-minnesota-rally-shooting-00171526",
-      "urlToImage": "https://static.politico.com/47/dc/c68a07604bfeb53e2d512dead8a3/election-2024-trump-84003.jpg",
-      "publishedAt": "2024-07-28T03:04:50Z",
-      "content": "We have a new victim now, Kamala. A brand new victim, and honestly shes a radical left lunatic. When you find out about her, all I have to say is defund the police, Trump said.\r\nThree months ago, she… [+4637 chars]"
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "The Associated Press",
-      "title": "Trump and Vance team up to campaign in Minnesota, a state that hasn't backed the GOP in 52 years - The Associated Press",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMic2h0dHBzOi8vYXBuZXdzLmNvbS9hcnRpY2xlL3RydW1wLXZhbmNlLW1pbm5lc290YS1oYXJyaXMtMjAyNC1wcmVzaWRlbnRpYWwtZWxlY3Rpb24tMjJhZWU2ZWNiODIxMDMyMzI4YzFlM2QyMTBiMjc3MzPSAQA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-28T02:05:00Z",
+      "publishedAt": "2024-07-29T08:11:00Z",
       "content": null
   },
   {
@@ -201,12 +110,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "ComicBook.com",
-      "title": "SDCC 2024: Fantastic Four Reboot Unveils First Look at Comic-Accurate Galactus - ComicBook.com",
+      "author": "Факти",
+      "title": "Mitsubishi Nissan и Honda се обединяват ᐉ Новини от Fakti.bg - Авто - Факти",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiYmh0dHBzOi8vY29taWNib29rLmNvbS9tb3ZpZXMvbmV3cy9jb21pYy1jb24tc2RjYy0yMDI0LWZhbnRhc3RpYy1mb3VyLWdhbGFjdHVzLWZpcnN0LWxvb2stcmV2ZWFsZWQv0gEA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiRGh0dHBzOi8vZmFrdGkuYmcvYXZ0by85MDA1MjQtbWl0c3ViaXNoaS1uaXNzYW4taS1ob25kYS1zZS1vYmVkaW5hdmF00gEA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T01:54:00Z",
+      "publishedAt": "2024-07-29T07:55:00Z",
       "content": null
   },
   {
@@ -214,12 +123,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "The New York Times",
-      "title": "Park Fire in California Grows Dramatically, Becoming Largest Active Blaze in U.S. - The New York Times",
+      "author": "Topsport.bg",
+      "title": "Ето защо Атанас Илиев се размина с трансфер в ЦСКА - Topsport.bg",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiTGh0dHBzOi8vd3d3Lm55dGltZXMuY29tLzIwMjQvMDcvMjcvdXMvY2FsaWZvcm5pYS1vcmVnb24td2lsZGZpcmVzLXNtb2tlLmh0bWzSAQA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiU2h0dHBzOi8vdG9wc3BvcnQuYmcvY3NrYS9ldG8temFzaHRvLWF0YW5hcy1pbGlldi1zZS1yYXptaW5hLXMtdHJhbnNmZXItdi10c3NrYS5odG1s0gEA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T01:49:14Z",
+      "publishedAt": "2024-07-29T07:46:54Z",
       "content": null
   },
   {
@@ -227,12 +136,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "USA TODAY",
-      "title": "Exclusive: Sinaloa Cartel leader Ismael Zambada kidnapped, flown to the US, lawyer says - USA TODAY",
+      "author": "Vesti.bg - Новини от България и света",
+      "title": "Заплашената от Израел \"Хизбула\" напусна позиции в Ливан - Vesti.bg - Новини от България и света",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMigQFodHRwczovL3d3dy51c2F0b2RheS5jb20vc3RvcnkvbmV3cy9wb2xpdGljcy8yMDI0LzA3LzI3L3NpbmFsb2EtY2FydGVsLWxlYWRlci1lbC1tYXlvLXphbWJhZGEta2lkbmFwcGVkLXRvLXVzLWxhd3llci83NDU3MTQzNzAwNy_SAQA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiWWh0dHBzOi8vd3d3LnZlc3RpLmJnL3N2aWF0L3phcGxhc2hlbmF0YS1vdC1penJhZWwtaGl6YnVsYS1uYXB1c25hLXBvemljaWktdi1saXZhbi02MjA0ODU50gEA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T01:19:13Z",
+      "publishedAt": "2024-07-29T06:35:30Z",
       "content": null
   },
   {
@@ -240,12 +149,12 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "The Associated Press",
-      "title": "Wildfire in Jasper National Park could burn for months, Canadian official says - The Associated Press",
+      "author": "24 часа ",
+      "title": "\"Тайната вечеря\" на драг кралиците отказа спонсор от олимпийските игри - 24 часа ",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiW2h0dHBzOi8vYXBuZXdzLmNvbS9hcnRpY2xlL2NhbmFkYS13aWxkZmlyZXMtYWxiZXJ0YS1qYXNwZXItYzU5ZTA2NjdjMmVkZTRiZTJkZDY5ZjIxN2ZkMDBmYzXSAQA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiNWh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvbWV6aGR1bmFyb2RuaS9hcnRpY2xlLzE4NTI1ODAx0gEA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T00:52:00Z",
+      "publishedAt": "2024-07-29T06:24:00Z",
       "content": null
   },
   {
@@ -253,12 +162,103 @@ export const news: NewsArticle[] = [
           "id": "google-news",
           "name": "Google News"
       },
-      "author": "CNBC",
-      "title": "At least 30 dead in Gaza school airstrike; Israel says targeted militants - CNBC",
+      "author": "24 часа ",
+      "title": "Свидетел на взривовете в Елин Пелин: Имаше бездействие и липса на организация - 24 часа ",
       "description": null,
-      "url": "https://news.google.com/rss/articles/CBMibWh0dHBzOi8vd3d3LmNuYmMuY29tLzIwMjQvMDcvMjgvYXQtbGVhc3QtMzAtZGVhZC1pbi1nYXphLXNjaG9vbC1haXJzdHJpa2UtaXNyYWVsLXNheXMtdGFyZ2V0ZWQtbWlsaXRhbnRzLmh0bWzSAXFodHRwczovL3d3dy5jbmJjLmNvbS9hbXAvMjAyNC8wNy8yOC9hdC1sZWFzdC0zMC1kZWFkLWluLWdhemEtc2Nob29sLWFpcnN0cmlrZS1pc3JhZWwtc2F5cy10YXJnZXRlZC1taWxpdGFudHMuaHRtbA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiMGh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvYnVsZ2FyaWEvYXJ0aWNsZS8xODUyNTg2ONIBAA?oc=5",
       "urlToImage": null,
-      "publishedAt": "2024-07-28T00:44:00Z",
+      "publishedAt": "2024-07-29T05:55:00Z",
+      "content": null
+  },
+  {
+      "source": {
+          "id": "google-news",
+          "name": "Google News"
+      },
+      "author": "Gol.bg",
+      "title": "Левски трепери за новата си звезда - Gol.bg",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiSWh0dHBzOi8vd3d3LmdvbC5iZy9hLzExMi1sZXZza2kvNDAwOTI4LWxldnNraS10cmVwZXJpLXphLW5vdmF0YS1zaS16dmV6ZGHSAU1odHRwczovL3d3dy5nb2wuYmcvYS8xMTItbGV2c2tpLzQwMDkyOC1sZXZza2ktdHJlcGVyaS16YS1ub3ZhdGEtc2ktenZlemRhL2FtcA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-07-29T05:50:00Z",
+      "content": null
+  },
+  {
+      "source": {
+          "id": "google-news",
+          "name": "Google News"
+      },
+      "author": "News.bg",
+      "title": "Вигенин: ИТН получава мандата заради съдебните битки на Нинова - News.bg",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiXGh0dHBzOi8vbmV3cy5iZy9wb2xpdGljcy92aWdlbmluLWl0bi1wb2x1Y2hhdmEtbWFuZGF0YS16YXJhZGktc2FkZWJuaXRlLWJpdGtpLW5hLW5pbm92YS5odG1s0gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-07-29T05:11:10Z",
+      "content": null
+  },
+  {
+      "source": {
+          "id": "google-news",
+          "name": "Google News"
+      },
+      "author": "DarikNews",
+      "title": "Времето в понеделник: Жълт код за опасни горещини в почти цялата страна - DarikNews",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMieWh0dHBzOi8vZGFyaWtuZXdzLmJnL25vdmluaS9ieWxnYXJpaWEvdnJlbWV0by12LXBvbmVkZWxuaWstemh5bHQta29kLXphLW9wYXNuaS1nb3Jlc2h0aW5pLXYtcG9jaHRpLWNpYWxhdGEtc3RyYW5hLTIzOTAxMzbSAX1odHRwczovL2RhcmlrbmV3cy5iZy9hbXAvbm92aW5pL2J5bGdhcmlpYS92cmVtZXRvLXYtcG9uZWRlbG5pay16aHlsdC1rb2QtemEtb3Bhc25pLWdvcmVzaHRpbmktdi1wb2NodGktY2lhbGF0YS1zdHJhbmEtMjM5MDEzNg?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-07-29T03:14:00Z",
+      "content": null
+  },
+  {
+      "source": {
+          "id": "google-news",
+          "name": "Google News"
+      },
+      "author": "ДНЕВНИК",
+      "title": "Бързи новини (29 юли) - ДНЕВНИК",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiTGh0dHBzOi8vd3d3LmRuZXZuaWsuYmcvYnVyemktbm92aW5pLzIwMjQvMDcvMjkvNDY1NjMzNF9idXJ6aV9ub3ZpbmlfMjlfanVsaS_SAQA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-07-29T03:00:00Z",
+      "content": null
+  },
+  {
+      "source": {
+          "id": "google-news",
+          "name": "Google News"
+      },
+      "author": "Bgonair",
+      "title": "Хороскоп за 29 юли: Лъвовете да бъдат смирени, Стрелците да внимават с покупките - Bgonair",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMif2h0dHBzOi8vd3d3LmJnb25haXIuYmcvYS8xNjMtbHl1Ym9waXRuby8zNTMwMjAtaG9yb3Nrb3AtemEtMjkteXVsaS1sYXZvdmV0ZS1kYS1iYWRhdC1zbWlyZW5pLXN0cmVsdHNpdGUtZGEtdm5pbWF2YXQtcy1wb2t1cGtpdGXSAYMBaHR0cHM6Ly93d3cuYmdvbmFpci5iZy9hLzE2My1seXVib3BpdG5vLzM1MzAyMC1ob3Jvc2tvcC16YS0yOS15dWxpLWxhdm92ZXRlLWRhLWJhZGF0LXNtaXJlbmktc3RyZWx0c2l0ZS1kYS12bmltYXZhdC1zLXBva3Vwa2l0ZS9hbXA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-07-29T02:00:00Z",
+      "content": null
+  },
+  {
+      "source": {
+          "id": "google-news",
+          "name": "Google News"
+      },
+      "author": "24 часа ",
+      "title": "Янаки Стоилов: Реалистично е в Конституционния съд да се работи за партийни интереси - 24 часа ",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiMGh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvYnVsZ2FyaWEvYXJ0aWNsZS8xODUyMzU4NNIBAA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-07-28T15:56:00Z",
+      "content": null
+  },
+  {
+      "source": {
+          "id": "google-news",
+          "name": "Google News"
+      },
+      "author": "Mediapool.bg",
+      "title": "Робърт Дауни-джуниър се завръща в света на Marvel, но като злодeй - Mediapool.bg",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMibGh0dHBzOi8vd3d3Lm1lZGlhcG9vbC5iZy9yb2JhcnQtZGF1bmktZHpodW5pYXItc2UtemF2cmFzaHRhLXYtc3ZldGEtbmEtbWFydmVsLW5vLWthdG8temxvZGV5LW5ld3MzNjE2MTUuaHRtbNIBAA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-07-28T13:55:10Z",
       "content": null
   }
 ]

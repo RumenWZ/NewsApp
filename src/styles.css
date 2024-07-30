@@ -1,0 +1,18 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: "Roboto Slab", "Helvetica Neue", sans-serif; }
+
+#google_translate_element {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+

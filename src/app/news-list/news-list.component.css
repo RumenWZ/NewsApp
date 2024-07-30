@@ -70,3 +70,10 @@
 .country-selection select {
   flex-grow: 1;
 }
+
+.right-pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -1,7 +1,8 @@
 <button (click)="getArticles()">Call</button>
 <button (click)="getImage()">Get Image</button>
-<button (click)="translate()">Move</button>
+<button (click)="test()">test</button>
 <button (click)="getAuthors()">Authors</button>
+
 
 <div class="col-wrapper">
   <div class="left-col">
@@ -18,7 +19,7 @@
     </div>
 
     <h1>Search for articles</h1>
-    <input>
+    <input class="article-input">
   </div>
 
   <div class="right-col">
@@ -28,10 +29,20 @@
         <option *ngFor="let country of countryList" [value]="country.short">{{country.country}}</option>
       </select>
     </div>
+    <div id="google_translate_element"></div>
     <div class="test">
-      <div *ngFor="let article of rightSideArticles">
+      <div *ngFor="let article of paginatedRightSideArticles">
         <app-news-card-mini [article]="article"></app-news-card-mini>
       </div>
+      <div class="right-pagination-wrapper">
+        <mat-paginator
+          [length]="rPageLength"
+          [pageSize]="rPageSize"
+          [hidePageSize]="true"
+          (page)="onPageChange($event)">
+        </mat-paginator>
+      </div>
+
     </div>
 
   </div>

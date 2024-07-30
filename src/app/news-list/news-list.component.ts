@@ -8,11 +8,13 @@ import { NewsCardComponent } from "../news-card/news-card.component";
 import { ImageService } from '../services/image.service';
 import { NewsCardMiniComponent } from "../news-card-mini/news-card-mini.component";
 import { countryList } from '../misc/countries';
+import { PaginationService } from '../services/pagination.service';
+import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-news-list',
   standalone: true,
-  imports: [CommonModule, NewsCardComponent, NewsCardMiniComponent],
+  imports: [CommonModule, NewsCardComponent, NewsCardMiniComponent, MatPaginatorModule],
   templateUrl: './news-list.component.html',
   styleUrl: './news-list.component.css'
 })
@@ -20,16 +22,22 @@ export class NewsListComponent {
   newsArticles: NewsArticle[] = [];
   topHeadlineArticles: NewsArticle[] = [];
   rightSideArticles: NewsArticle[] = [];
+  paginatedRightSideArticles: NewsArticle[] = [];
   private destroy$ = new Subject<void>();
   @ViewChild('carouselContainer') carouselContainer!: ElementRef;
   @ViewChild('carouselData') carouselData!: ElementRef;
   private currentOffset = 0;
   currentCarouselIndex = 1;
   countryList = countryList;
+  rPage = 1;
+  rPageSize = 7;
+  rPageLength = 0;
+
 
   constructor(
     readonly newsService: NewsService,
-    readonly imageService: ImageService
+    readonly imageService: ImageService,
+    readonly paginationService: PaginationService
   ) {
 
   }
@@ -55,8 +63,22 @@ export class NewsListComponent {
     this.newsArticles = news;
     this.cleanArticles();
     this.rightSideArticles = this.newsArticles;
+    this.rPageLength = this.rightSideArticles.length;
+    this.loadRightColNews();
     this.getTopHeadlinesList();
 
+  }
+
+  test() {
+
+  }
+
+  loadRightColNews() {
+    this.paginationService.paginateData(this.rightSideArticles, this.rPage, this.rPageSize)
+    .subscribe(data => {
+      this.paginatedRightSideArticles = data;
+      console.log(data);
+    })
   }
 
   ngAfterViewInit() {
@@ -116,11 +138,17 @@ export class NewsListComponent {
     this.newsService.getTopHeadlines(value).pipe(takeUntil(this.destroy$))
     .subscribe((response: any) => {
       this.rightSideArticles = response.articles;
+      this.loadRightColNews();
     });
   }
 
   autoScroll() {
 
+  }
+
+  onPageChange(event: PageEvent) {
+    this.rPage = event.pageIndex + 1;
+    this.loadRightColNews();
   }
 
 }
