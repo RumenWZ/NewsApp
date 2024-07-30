@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+}
+
+.mini {
+  position: relative;
+  max-height: 7rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.mini img {
+  height: 6rem;
+  width: 9em;
+  padding: .2rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mini img:hover {
+  opacity: 0.8;
+}
+
+.mini-details {
+  height: fit-content;
+  
+  padding-left: .5rem;
+  color: black;
+}
+
+.mini-title:hover {
+  text-decoration: underline;
+}

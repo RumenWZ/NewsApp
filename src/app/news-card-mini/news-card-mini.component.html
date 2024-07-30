@@ -1,0 +1,11 @@
+<a [href]="article.url" target="_blank">
+  <div class="mini">
+    <img *ngIf="article.urlToImage" [src]="article.urlToImage">
+    <img *ngIf="!article.urlToImage" src="assets/images/news1.png">
+    <div class="mini-details">
+      {{article.title}}
+      <div>Published on: </div>
+    </div>
+  </div>
+</a>
+<hr>

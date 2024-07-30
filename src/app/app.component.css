@@ -1,0 +1,8 @@
+* {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.container {
+  margin: 20px auto;
+  width: fit-content;
+}

@@ -1,0 +1,12 @@
+<div class="article">
+  <div class="article-wrapper" >
+      <a [href]="article.url" target="_blank">
+        <img class="article-image" *ngIf="article.urlToImage" [src]="article.urlToImage" alt="Image for {{ article.title }}">
+      </a>
+      <h2 class="article-title">{{ article.title }}</h2>
+      <div class="article-details">
+        <!-- <p>{{ article.author }}</p> -->
+        <small>Published on: {{ formattedDate }} ({{postedTimeAgo}})</small>
+      </div>
+  </div>
+</div>

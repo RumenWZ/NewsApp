@@ -1,0 +1,41 @@
+<button (click)="getArticles()">Call</button>
+<button (click)="getImage()">Get Image</button>
+<button (click)="translate()">Move</button>
+<button (click)="getAuthors()">Authors</button>
+
+<div class="col-wrapper">
+  <div class="left-col">
+    <div class="news-articles">
+      <div class="carousel">
+        <button *ngIf="currentCarouselIndex > 1" class="carousel-button left" (click)="moveLeft()">&#8592;</button>
+        <button *ngIf="currentCarouselIndex < topHeadlineArticles.length" class="carousel-button right" (click)="moveRight()">&#8594;</button>
+        <div class="data-slides" #carouselData>
+          <div class="article" *ngFor="let article of topHeadlineArticles">
+            <app-news-card [article]="article"></app-news-card>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>Search for articles</h1>
+    <input>
+  </div>
+
+  <div class="right-col">
+    <div class="country-selection">
+      Select country:
+      <select (change)="onSelectChanges($event)">
+        <option *ngFor="let country of countryList" [value]="country.short">{{country.country}}</option>
+      </select>
+    </div>
+    <div class="test">
+      <div *ngFor="let article of rightSideArticles">
+        <app-news-card-mini [article]="article"></app-news-card-mini>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+

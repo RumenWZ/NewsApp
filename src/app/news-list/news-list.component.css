@@ -1,0 +1,72 @@
+.data-slides {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+
+.carousel {
+  max-width: 50rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.article {
+  flex: 0 0 auto;
+  height: 500px;
+  width: 50rem;
+}
+
+.col-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.test {
+  width: 500px;
+  height: 1000px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  background: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  background-color: rgba(0,0,0, .4);
+  padding: 0 .5rem 0.5rem .5rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  background-color: rgba(0,0,0, .55);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.right {
+  right: .4rem;
+}
+
+.left {
+  left: .4rem;
+}
+
+.country-selection {
+  padding: 0 0 .5rem .3rem ;
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+}
+
+.country-selection select {
+  flex-grow: 1;
+}
