@@ -77,3 +77,47 @@
   justify-content: center;
 }
 
+
+.input-wrapper {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-input{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  flex-grow: 0.5;
+  text-indent: .4rem;
+}
+
+.search-btn {
+  height:2.25rem;
+  width: 2.25rem;
+  cursor: pointer;
+}
+
+.search-btn i {
+  font-size: 1.2rem;
+}
+
+.queried-articles-container {
+  min-height: 77rem;
+  margin-top: 2rem;
+}
+
+mat-paginator {
+  background-color: rgb(194, 194, 194);
+}
+
+
+.mat-tab-group .mat-tab-label {
+  color: black !important;
+}
+
+.mat-tab-group .mat-tab-label.mat-tab-label-active {
+  color: white !important;
+}

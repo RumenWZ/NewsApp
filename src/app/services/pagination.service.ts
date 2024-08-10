@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { NewsArticle } from '../models/news';
 
 
 
@@ -8,7 +9,7 @@ import { of } from 'rxjs';
 })
 export class PaginationService {
 
-  paginateData(data: any[], page: number, pageSize: number) {
+  paginateData(data: any[], page: number, pageSize: number): Observable<NewsArticle[]> {
     const start = (page - 1) * pageSize;
     const end = start + pageSize;
     return of(data.slice(start, end));

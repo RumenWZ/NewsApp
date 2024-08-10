@@ -16,7 +16,7 @@ export class NewsService {
     return this.http.get<NewsArticle[]>(`${this.newsApiUrl}/top-headlines?country=${country}&apiKey=${environment.newsApiKey}`);
   }
 
-  getEverythingBG(query: string): Observable<any> {
+  getEverything(query: string): Observable<any> {
     return this.http.get<any>(`${this.newsApiUrl}/everything?q=${query}&apiKey=${environment.newsApiKey}`);
   }
 

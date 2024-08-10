@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+}
+
+.mini {
+  position: relative;
+  max-height: 7rem;
+  display: flex;
+  cursor: pointer;
+
+}
+
+.mini img {
+  height: 6rem;
+  width: 9em;
+  padding: .2rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mini img:hover {
+  opacity: 0.8;
+}
+
+.mini-details {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  padding-left: .5rem;
+  color: black;
+}
+
+.mini-title:hover {
+  text-decoration: underline;
+}
+
+.published-on {
+  position: absolute;
+  bottom: 0;
+  left: .5rem;
+  font-size: .8rem;
+}
+
+.title {
+  max-height: 4rem;
+  overflow: hidden;
+}

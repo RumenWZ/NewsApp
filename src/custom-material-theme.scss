@@ -1,0 +1,25 @@
+@import 'node_modules/@angular/material/theming';
+
+@include mat-core();
+
+// Define your color palettes
+$primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-pink);
+
+// Define a custom theme
+$custom-theme: mat-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    background: mat-palette($mat-grey, 50),
+  ),
+  typography: mat-typography-config(),
+  tab: (
+    inactive: (
+      color: black,
+    )
+  )
+));
+
+// Include theme styles
+@include angular-material-theme($custom-theme);

@@ -4,8 +4,8 @@
 <button (click)="getAuthors()">Authors</button>
 
 
-<div class="col-wrapper">
-  <div class="left-col">
+
+
     <div class="news-articles">
       <div class="carousel">
         <button *ngIf="currentCarouselIndex > 1" class="carousel-button left" (click)="moveLeft()">&#8592;</button>
@@ -18,35 +18,64 @@
       </div>
     </div>
 
-    <h1>Search for articles</h1>
-    <input class="article-input">
-  </div>
+     <mat-tab-group>
+        <!-- First tab -->
+        <mat-tab label="News by Country">
+          <div class="country-selection">
+            Select country:
+            <select (change)="onSelectChanges($event)">
+              <option *ngFor="let country of countryList" [value]="country.short">{{country.country}}</option>
+            </select>
+          </div>
+          <!-- <div id="google_translate_element"></div> -->
+          <div class="test">
+            <div *ngFor="let article of paginatedRightSideArticles">
+              <app-news-card-mini [article]="article"></app-news-card-mini>
+            </div>
+            <div class="right-pagination-wrapper">
+              <mat-paginator
+                [length]="rPageLength"
+                [pageSize]="rPageSize"
+                [hidePageSize]="true"
+                (page)="onPageChange($event)">
+              </mat-paginator>
+            </div>
+          </div>
+        </mat-tab>
+        <!-- Second tab -->
+        <mat-tab label="Search for Articles">
+          <h1 style="text-align: center;">Search for articles</h1>
+          <form (submit)="onSubmitSearch($event)">
+            <div class="input-wrapper">
+              <input class="article-input" #inputField placeholder="Enter a keyword...">
+              <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+          <div class="queried-articles-container">
+            <div *ngFor="let article of paginatedQueriedArticles">
+              <app-news-queried [article]="article"></app-news-queried>
+            </div>
+            <h2 class="center" *ngIf="queriedArticles.length == 0">No recent articles found that match your search.</h2>
+          </div>
+          <div class="pagination" *ngIf="queriedArticles.length > 0">
+            <button class="pag-btn pag-btn-left" [disabled]="qPage <= 1" (click)="onQueriedPageChange(-qPage + 1)">&#171;</button>
+            <button class="pag-btn pag-btn-left" [disabled]="qPage <= 1" (click)="onQueriedPageChange(-1)">&#60;</button>
 
-  <div class="right-col">
-    <div class="country-selection">
-      Select country:
-      <select (change)="onSelectChanges($event)">
-        <option *ngFor="let country of countryList" [value]="country.short">{{country.country}}</option>
-      </select>
-    </div>
-    <div id="google_translate_element"></div>
-    <div class="test">
-      <div *ngFor="let article of paginatedRightSideArticles">
-        <app-news-card-mini [article]="article"></app-news-card-mini>
-      </div>
-      <div class="right-pagination-wrapper">
-        <mat-paginator
-          [length]="rPageLength"
-          [pageSize]="rPageSize"
-          [hidePageSize]="true"
-          (page)="onPageChange($event)">
-        </mat-paginator>
-      </div>
+            <div class="page-numbers">
+              <button class="pag-btn" (click)="onQueriedPageNumberChange($event)" #pagButton1>1</button>
+              <button [disabled]="qPageLength < qPageSize * 2" class="pag-btn" (click)="onQueriedPageNumberChange($event)" #pagButton2>2</button>
+              <button [disabled]="qPageLength < qPageSize * 3" class="pag-btn" (click)="onQueriedPageNumberChange($event)" #pagButton3>3</button>
+              <button [disabled]="qPageLength < qPageSize * 4" class="pag-btn" (click)="onQueriedPageNumberChange($event)" #pagButton4>4</button>
+              <button [disabled]="qPageLength < qPageSize * 5" class="pag-btn" (click)="onQueriedPageNumberChange($event)" #pagButton5>5</button>
+            </div>
 
-    </div>
-
-  </div>
-</div>
+            <button class="pag-btn pag-btn-right" [disabled]="qPage >= qPageSize || qPageLength <= qPageSize * qPage"
+              (click)="onQueriedPageChange(1)">&#62;</button>
+            <button class="pag-btn pag-btn-right" [disabled]="qPage >= qPageSize || qPageLength <= qPageSize * qPage"
+              (click)="onQueriedPageChange(qPageLength / qPageSize - qPage)">&#187;</button>
+          </div>
+        </mat-tab>
+     </mat-tab-group>
 
 
 
