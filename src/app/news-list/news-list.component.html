@@ -1,45 +1,41 @@
-<button (click)="getArticles()">Call</button>
-<button (click)="getImage()">Get Image</button>
-<button (click)="test()">test</button>
-<button (click)="getAuthors()">Authors</button>
-
-
-
-
-    <div class="news-articles">
+<div class="main-content">
+    <div class="news-articles" (mouseover)="pauseAutoScroll()" (mouseleave)="onMouseLeave()">
       <div class="carousel">
-        <button *ngIf="currentCarouselIndex > 1" class="carousel-button left" (click)="moveLeft()">&#8592;</button>
-        <button *ngIf="currentCarouselIndex < topHeadlineArticles.length" class="carousel-button right" (click)="moveRight()">&#8594;</button>
+        <button [ngClass]="{ 'disable-button' : currentCarouselIndex == 1}" [disabled]="currentCarouselIndex == 0" class="carousel-button left" (click)="moveLeft(true)">&#8592;</button>
+        <button [ngClass]="{ 'disable-button' : currentCarouselIndex >= topHeadlineArticles.length}" class="carousel-button right" (click)="moveRight(true)">&#8594;</button>
         <div class="data-slides" #carouselData>
-          <div class="article" *ngFor="let article of topHeadlineArticles">
-            <app-news-card [article]="article"></app-news-card>
+          <div class="article" *ngFor="let article of topHeadlineArticles; let i = index">
+            <app-news-card [article]="article" (imageError)="removeArticleTopHeadlines(i)"></app-news-card>
           </div>
         </div>
       </div>
     </div>
-
+      <div class="tabs-wrapper">
      <mat-tab-group>
         <!-- First tab -->
         <mat-tab label="News by Country">
-          <div class="country-selection">
-            Select country:
-            <select (change)="onSelectChanges($event)">
-              <option *ngFor="let country of countryList" [value]="country.short">{{country.country}}</option>
-            </select>
+          <div class="country-selection-wrapper">
+            <h1 style="text-align: center;">Latest news by country</h1>
+            <div class="country-selection">
+              Select country:
+              <select [(ngModel)]="selectedCountry" (change)="onSelectChanges($event)">
+                <option *ngFor="let country of countryList" [value]="country.short">{{country.country}}</option>
+              </select>
+            </div>
+             <div *ngIf="paginatedArticlesByCountry.length == 0" style="padding: 3rem; text-align: center;">
+             <span class="latest-news-error" >Due to recent changes by NewsAPI.org, retrieving news by country is now limited to only the United States under my current subscription plan.</span>
+            </div>
+             <div *ngFor="let article of paginatedArticlesByCountry">
+              <app-news-card-mediastack-mini [article]="article"></app-news-card-mediastack-mini>
+            </div>
           </div>
-          <!-- <div id="google_translate_element"></div> -->
-          <div class="test">
-            <div *ngFor="let article of paginatedRightSideArticles">
-              <app-news-card-mini [article]="article"></app-news-card-mini>
-            </div>
-            <div class="right-pagination-wrapper">
-              <mat-paginator
-                [length]="rPageLength"
-                [pageSize]="rPageSize"
-                [hidePageSize]="true"
-                (page)="onPageChange($event)">
-              </mat-paginator>
-            </div>
+          <div *ngIf="paginatedArticlesByCountry.length > 0" class="right-pagination-wrapper">
+            <mat-paginator
+              [length]="rPageLength"
+              [pageSize]="rPageSize"
+              [hidePageSize]="true"
+              (page)="onPageChange($event)">
+            </mat-paginator>
           </div>
         </mat-tab>
         <!-- Second tab -->
@@ -47,7 +43,7 @@
           <h1 style="text-align: center;">Search for articles</h1>
           <form (submit)="onSubmitSearch($event)">
             <div class="input-wrapper">
-              <input class="article-input" #inputField placeholder="Enter a keyword...">
+              <input [(ngModel)]="queryValue" [ngModelOptions]="{standalone: true}" class="article-input" #inputField placeholder="Enter a keyword...">
               <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
             </div>
           </form>
@@ -76,6 +72,6 @@
           </div>
         </mat-tab>
      </mat-tab-group>
-
-
+    </div>
+  </div>
 

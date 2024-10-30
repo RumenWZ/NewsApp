@@ -9,7 +9,7 @@ import { NewsArticle } from '../models/news';
 })
 export class PaginationService {
 
-  paginateData(data: any[], page: number, pageSize: number): Observable<NewsArticle[]> {
+  paginateData(data: any[], page: number, pageSize: number): Observable<any[]> {
     const start = (page - 1) * pageSize;
     const end = start + pageSize;
     return of(data.slice(start, end));

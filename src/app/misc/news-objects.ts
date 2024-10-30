@@ -1,264 +1,304 @@
-import { NewsArticle } from "../models/news";
+import { Mediastack } from "../models/mediastackNews";
 
-export const news: NewsArticle[] = [
+export const news: Mediastack[] = [
   {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "24 часа ",
-      "title": "Министър Стоянов: Как така на петия ден се появи свидетел на трагедията в Елин Пелин и отиде в телевизията? - 24 часа ",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiMGh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvYnVsZ2FyaWEvYXJ0aWNsZS8xODUyNzcxONIBAA?oc=5",
-      "urlToImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2112588.jpg&f=1&nofb=1&ipt=a55c4d6db6fd58b37c481bcdb6d4dc604f5e9e2ba27982de6892a892081c194a&ipo=images",
-      "publishedAt": "2024-07-29T09:17:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Vesti.bg - Новини от България и света",
-      "title": "Взрив в завод край Свищов - Vesti.bg - Новини от България и света",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiQWh0dHBzOi8vd3d3LnZlc3RpLmJnL2J1bGdhcmlhL3Z6cml2LXYtemF2b2Qta3Jhai1zdmlzaHRvdi02MjA0ODc20gEA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T09:06:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "ДНЕВНИК",
-      "title": "Зам.-кметът на София Никола Лютов: Симулативен спор спря премахването на хотела на Румен Гайтански - ДНЕВНИК",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiZWh0dHBzOi8vbS5kbmV2bmlrLmJnL2ludGVydmp1LzIwMjQvMDcvMjkvNDY1NjQxNl96YW0ta21ldHV0X25hX3NvZmlpYV9uaWtvbGFfbGp1dG92X3NpbXVsYXRpdmVuX3Nwb3Iv0gEA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T09:02:03Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Life.dir.bg",
-      "title": "Стана ясна причината за смъртта на Шиниъд О'Kонър - Life.dir.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiT2h0dHBzOi8vbGlmZS5kaXIuYmcvenZlemRpL3N0YW5hLXlhc25hLXByaWNoaW5hdGEtemEtc21hcnR0YS1uYS1zaGluaWFkLW8ta29uYXLSAQA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T08:57:09Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Gol.bg",
-      "title": "Третото появяване на Ендрик на \"Бернабеу\": Това е лудост! - Gol.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiYmh0dHBzOi8vd3d3LmdvbC5iZy9hLzExMC1yZWFsbWFkcmlkLzQwMDk1My10cmV0b3RvLXBveWF2eWF2YW5lLW5hLWVuZHJpay1uYS1iZXJuYWJldS10b3ZhLWUtbHVkb3N00gFmaHR0cHM6Ly93d3cuZ29sLmJnL2EvMTEwLXJlYWxtYWRyaWQvNDAwOTUzLXRyZXRvdG8tcG95YXZ5YXZhbmUtbmEtZW5kcmlrLW5hLWJlcm5hYmV1LXRvdmEtZS1sdWRvc3QvYW1w?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T08:19:58Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "btvnovinite.bg",
-      "title": "Ердоган: Турция може да влезе в Израел. Кац: Ердоган следва стъпките на Саддам Хюсеин - btvnovinite.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMieGh0dHBzOi8vYnR2bm92aW5pdGUuYmcvc3ZldHV0L2VyZG9nYW4tdHVyY2lqYS1tb3poZS1kYS12bGV6ZS12LWl6cmFlbC1rYWMtZXJkb2dhbi1zbGVkdmEtc3RhcGtpdGUtbmEtc2FkZGFtLWhqdXNlaW4uaHRtbNIBAA?oc=5",
-      "urlToImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd.newsweek.com%2Fen%2Ffull%2F500082%2Fturkish-president-recep-tayyip-erdogan.jpg&f=1&nofb=1&ipt=92b2c306056aee9069d15d6a38b9fcbc8aa993ac7fb53d811706076ee22c976d&ipo=images",
-      "publishedAt": "2024-07-29T08:14:31Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "News.bg",
-      "title": "Мъж уби бившата си приятелка в хотел в Пазарджик - News.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiT2h0dHBzOi8vbmV3cy5iZy9jcmltZS9tYXpoLXViaS1iaXZzaGF0YS1zaS1wcml5YXRlbGthLXYtaG90ZWwtdi1wYXphcmR6aGlrLmh0bWzSAQA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T08:14:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Факти",
-      "title": "„Съкрушителни и необратими резултати“: Мадуро печели отново във Венецуела ᐉ Новини от Fakti.bg - Свят - Факти",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiZmh0dHBzOi8vZmFrdGkuYmcvd29ybGQvOTAwNTIyLXNha3J1c2hpdGVsbmktaS1uZW9icmF0aW1pLXJlenVsdGF0aS1tYWR1cm8tcGVjaGVsaS1vdG5vdm8tdmF2LXZlbmVjdWVsYdIBAA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T08:11:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Факти",
-      "title": "Mitsubishi Nissan и Honda се обединяват ᐉ Новини от Fakti.bg - Авто - Факти",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiRGh0dHBzOi8vZmFrdGkuYmcvYXZ0by85MDA1MjQtbWl0c3ViaXNoaS1uaXNzYW4taS1ob25kYS1zZS1vYmVkaW5hdmF00gEA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T07:55:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Topsport.bg",
-      "title": "Ето защо Атанас Илиев се размина с трансфер в ЦСКА - Topsport.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiU2h0dHBzOi8vdG9wc3BvcnQuYmcvY3NrYS9ldG8temFzaHRvLWF0YW5hcy1pbGlldi1zZS1yYXptaW5hLXMtdHJhbnNmZXItdi10c3NrYS5odG1s0gEA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T07:46:54Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Vesti.bg - Новини от България и света",
-      "title": "Заплашената от Израел \"Хизбула\" напусна позиции в Ливан - Vesti.bg - Новини от България и света",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiWWh0dHBzOi8vd3d3LnZlc3RpLmJnL3N2aWF0L3phcGxhc2hlbmF0YS1vdC1penJhZWwtaGl6YnVsYS1uYXB1c25hLXBvemljaWktdi1saXZhbi02MjA0ODU50gEA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T06:35:30Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "24 часа ",
-      "title": "\"Тайната вечеря\" на драг кралиците отказа спонсор от олимпийските игри - 24 часа ",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiNWh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvbWV6aGR1bmFyb2RuaS9hcnRpY2xlLzE4NTI1ODAx0gEA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T06:24:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "24 часа ",
-      "title": "Свидетел на взривовете в Елин Пелин: Имаше бездействие и липса на организация - 24 часа ",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiMGh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvYnVsZ2FyaWEvYXJ0aWNsZS8xODUyNTg2ONIBAA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T05:55:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Gol.bg",
-      "title": "Левски трепери за новата си звезда - Gol.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiSWh0dHBzOi8vd3d3LmdvbC5iZy9hLzExMi1sZXZza2kvNDAwOTI4LWxldnNraS10cmVwZXJpLXphLW5vdmF0YS1zaS16dmV6ZGHSAU1odHRwczovL3d3dy5nb2wuYmcvYS8xMTItbGV2c2tpLzQwMDkyOC1sZXZza2ktdHJlcGVyaS16YS1ub3ZhdGEtc2ktenZlemRhL2FtcA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T05:50:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "News.bg",
-      "title": "Вигенин: ИТН получава мандата заради съдебните битки на Нинова - News.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiXGh0dHBzOi8vbmV3cy5iZy9wb2xpdGljcy92aWdlbmluLWl0bi1wb2x1Y2hhdmEtbWFuZGF0YS16YXJhZGktc2FkZWJuaXRlLWJpdGtpLW5hLW5pbm92YS5odG1s0gEA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T05:11:10Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "DarikNews",
-      "title": "Времето в понеделник: Жълт код за опасни горещини в почти цялата страна - DarikNews",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMieWh0dHBzOi8vZGFyaWtuZXdzLmJnL25vdmluaS9ieWxnYXJpaWEvdnJlbWV0by12LXBvbmVkZWxuaWstemh5bHQta29kLXphLW9wYXNuaS1nb3Jlc2h0aW5pLXYtcG9jaHRpLWNpYWxhdGEtc3RyYW5hLTIzOTAxMzbSAX1odHRwczovL2RhcmlrbmV3cy5iZy9hbXAvbm92aW5pL2J5bGdhcmlpYS92cmVtZXRvLXYtcG9uZWRlbG5pay16aHlsdC1rb2QtemEtb3Bhc25pLWdvcmVzaHRpbmktdi1wb2NodGktY2lhbGF0YS1zdHJhbmEtMjM5MDEzNg?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T03:14:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "ДНЕВНИК",
-      "title": "Бързи новини (29 юли) - ДНЕВНИК",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiTGh0dHBzOi8vd3d3LmRuZXZuaWsuYmcvYnVyemktbm92aW5pLzIwMjQvMDcvMjkvNDY1NjMzNF9idXJ6aV9ub3ZpbmlfMjlfanVsaS_SAQA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T03:00:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Bgonair",
-      "title": "Хороскоп за 29 юли: Лъвовете да бъдат смирени, Стрелците да внимават с покупките - Bgonair",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMif2h0dHBzOi8vd3d3LmJnb25haXIuYmcvYS8xNjMtbHl1Ym9waXRuby8zNTMwMjAtaG9yb3Nrb3AtemEtMjkteXVsaS1sYXZvdmV0ZS1kYS1iYWRhdC1zbWlyZW5pLXN0cmVsdHNpdGUtZGEtdm5pbWF2YXQtcy1wb2t1cGtpdGXSAYMBaHR0cHM6Ly93d3cuYmdvbmFpci5iZy9hLzE2My1seXVib3BpdG5vLzM1MzAyMC1ob3Jvc2tvcC16YS0yOS15dWxpLWxhdm92ZXRlLWRhLWJhZGF0LXNtaXJlbmktc3RyZWx0c2l0ZS1kYS12bmltYXZhdC1zLXBva3Vwa2l0ZS9hbXA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-29T02:00:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "24 часа ",
-      "title": "Янаки Стоилов: Реалистично е в Конституционния съд да се работи за партийни интереси - 24 часа ",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMiMGh0dHBzOi8vd3d3LjI0Y2hhc2EuYmcvYnVsZ2FyaWEvYXJ0aWNsZS8xODUyMzU4NNIBAA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-28T15:56:00Z",
-      "content": null
-  },
-  {
-      "source": {
-          "id": "google-news",
-          "name": "Google News"
-      },
-      "author": "Mediapool.bg",
-      "title": "Робърт Дауни-джуниър се завръща в света на Marvel, но като злодeй - Mediapool.bg",
-      "description": null,
-      "url": "https://news.google.com/rss/articles/CBMibGh0dHBzOi8vd3d3Lm1lZGlhcG9vbC5iZy9yb2JhcnQtZGF1bmktZHpodW5pYXItc2UtemF2cmFzaHRhLXYtc3ZldGEtbmEtbWFydmVsLW5vLWthdG8temxvZGV5LW5ld3MzNjE2MTUuaHRtbNIBAA?oc=5",
-      "urlToImage": null,
-      "publishedAt": "2024-07-28T13:55:10Z",
-      "content": null
-  }
+      "author": "Associated Press",
+      "title": "’Malcolm in the Middle’ star Frankie Muniz lands full-time NASCAR ride in 2025",
+      "description": "Former Malcolm in the Middle star Frankie Muniz is set to continue his NASCAR career with a full-time ride in the Truck Series for 2025. Muniz will make the jump from part-time racer to a full slate in the No. 33 Ford for Reaume Brothers Racing. He made two starts for Reaume Brothers this season in [&#8230;]",
+      "url": "https://torontosun.com/sports/auto-racing/muniz-lands-full-time-nascar-ride",
+      "source": "torontosun",
+      "image": null,
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:35:54+00:00"
+    },
+    {
+      "author": "The Associated Press",
+      "title": "McDonald’s tries to reassure customers after deadly E. coli outbreak",
+      "description": "The company has removed the Quarter Pounder from its menu in 10 states where illnesses were reported.",
+      "url": "https://www.presstelegram.com/2024/10/23/mcdonalds-tries-to-reassure-customers-after-deadly-e-coli-outbreak/",
+      "source": "Press-Telegram",
+      "image": "https://www.presstelegram.com/wp-content/uploads/2024/10/McDonalds_86512.jpg?w=1400px&strip=all",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:35:48+00:00"
+    },
+    {
+      "author": "The Associated Press",
+      "title": "McDonald’s tries to reassure customers after deadly E. coli outbreak",
+      "description": "The company has removed the Quarter Pounder from its menu in 10 states where illnesses were reported.",
+      "url": "https://www.sgvtribune.com/2024/10/23/mcdonalds-tries-to-reassure-customers-after-deadly-e-coli-outbreak/",
+      "source": "sgvtribune",
+      "image": "https://www.sgvtribune.com/wp-content/uploads/2024/10/McDonalds_86512.jpg?w=1400px&strip=all",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:35:48+00:00"
+    },
+    {
+      "author": "The Associated Press",
+      "title": "McDonald’s tries to reassure customers after deadly E. coli outbreak",
+      "description": "The company has removed the Quarter Pounder from its menu in 10 states where illnesses were reported.",
+      "url": "https://www.ocregister.com/2024/10/23/mcdonalds-tries-to-reassure-customers-after-deadly-e-coli-outbreak/",
+      "source": "ocregister",
+      "image": "https://www.ocregister.com/wp-content/uploads/2024/10/McDonalds_86512.jpg?w=1400px&strip=all",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:35:48+00:00"
+    },
+    {
+      "author": null,
+      "title": "Diageo India’s net profit falls to ₹341 crore amid muted demand environment",
+      "description": "Diageo India’s consolidated net profit for last quarter was ₹485 crore",
+      "url": "https://www.thehindubusinessline.com/companies/diageo-indias-net-profit-falls-to-341-crore-amid-muted-demand-environment/article68788078.ece",
+      "source": "Business Line",
+      "image": "https://bl-i.thgim.com/public/incoming/mjrhsn/article68788314.ece/alternates/LANDSCAPE_1200/IMG_FILE_PHOTO__A_sign_i_2_1_LJD3PLMO.jpg",
+      "category": "business",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:35:45+00:00"
+    },
+    {
+      "author": "MiMorelia.com",
+      "title": "VIRAL: marihuana queda regada en calle de Pátzcuaro y \"Tazo dorado\" busca su dosis [Video]",
+      "description": "VIRAL: marihuana queda regada en calle de Pátzcuaro y \"Tazo dorado\" busca su dosis [Video]",
+      "url": "https://mimorelia.com/noticias/entretenimiento/viral-marihuana-queda-regada-en-calle-de-pátzcuaro-y-tazo-dorado-busca-su-dosis-video",
+      "source": "mimorelia",
+      "image": null,
+      "category": "general",
+      "language": "es",
+      "country": "es",
+      "published_at": "2024-10-23T16:35:45+00:00"
+    },
+    {
+      "author": null,
+      "title": "News24 | Thursday's weather: Hot temperatures expected across several regions",
+      "description": "Extremely high fire danger is expected in Hantam municipality of the Western Cape and the central and south-eastern parts of the Northern Cape, according to the South African Weather Service.",
+      "url": "https://www.news24.com/news24/southafrica/news/thursdays-weather-hot-temperatures-expected-across-several-regions-20241023",
+      "source": "News24",
+      "image": "https://cdn.24.co.za/files/Cms/General/d/12336/a2cd693c37c1495587c78ae7f31c0715.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "za",
+      "published_at": "2024-10-23T16:35:40+00:00"
+    },
+    {
+      "author": null,
+      "title": "Uber auto, moto services to drive ₹36,000 cr in economic activity in 2024: Report",
+      "description": "Uber auto, moto services to drive ₹36,000 cr in economic activity in 2024: Report",
+      "url": "https://www.thehindubusinessline.com/companies/uber-auto-moto-services-to-drive-36000-cr-in-economic-activity-in-2024-report/article68788079.ece",
+      "source": "Business Line",
+      "image": "https://bl-i.thgim.com/public/incoming/af0zid/article68788648.ece/alternates/LANDSCAPE_1200/Auto_02.jpg",
+      "category": "business",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:35:32+00:00"
+    },
+    {
+      "author": "Bettina Makalintal",
+      "title": "McDonald’s Quarter Pounders Sicken Dozens in E. coli Outbreak",
+      "description": "The McDonald’s Quarter Pounder is at the center of a new E. coli outbreak. | Scott Olson/Getty Images It continues to be a bleak week for McDonald’s After making headlines earlier this week following presidential candidate and former president Donald Trump’s stunt cosplaying as a service worker, McDonald’s is back in the news again, this time for an even bleaker reason: The CDC announced yesterday that it’s investigating an E. coli outbreak linked to the company’s Quarter Pounders. As of this writing, the CDC reports 49 cases in 10 states, including one death and 10 hospitalizations...",
+      "url": "https://www.eater.com/24277727/mcdonalds-quarter-pounder-e-coli-outbreak-explained",
+      "source": "eater",
+      "image": null,
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:35:32+00:00"
+    },
+    {
+      "author": "info@futbolecuador.com",
+      "title": "Luis Enrique, frustrado por el 'injusto' empate del PSG ante el PSV(VIDEO)",
+      "description": "El entrenador del Par&iacute;s Saint-Germain, Luis Enrique, expres&oacute; su frustraci&oacute;n tras el empate 2-2 contra el PSV Eindhoven en la tercera jornada de la fase de liga de la UEFA Champions League.",
+      "url": "https://www.futbolecuador.com/site/noticia/el-tecnico-de-willian-pacho-lamento-el-resultado-tras-el-empate-en-la-champions-league-contra-el-psv-asegurando-que-su-equipo-fue-superior-durante-el-partido/168958?fromt=yes",
+      "source": "futbolecuador.com",
+      "image": "https://www.futbolecuador.com/imagenes/images/thumb640/67d49f0834821d28a55b53e31d6d3b3c.jpg",
+      "category": "general",
+      "language": "es",
+      "country": "ec",
+      "published_at": "2024-10-23T16:35:25+00:00"
+    },
+    {
+      "author": "Giuseppe Cozzolino",
+      "title": "Rubano castagne in un fondo agricolo in Irpinia, arrestati tre giovani napoletani",
+      "description": "Sorpresi a rubare castagne in un castagneto: tre napoletani arrestati dai carabinieri. Obbligo di firma per tutti, proposto anche il foglio di via obbligatorio.Continua a leggere",
+      "url": "https://www.fanpage.it/napoli/rubano-castagne-in-un-fondo-agricolo-in-irpinia-arrestati-tre-giovani-napoletani/",
+      "source": "Fanpage",
+      "image": null,
+      "category": "general",
+      "language": "it",
+      "country": "it",
+      "published_at": "2024-10-23T16:35:19+00:00"
+    },
+    {
+      "author": "HDblog.it",
+      "title": "iPhone 16, Samsung Evo Select, Smart TV LG e altro | Le 5 migliori offerte di oggi",
+      "description": "Ecco le 5 migliori offerte di oggi, 23 ottobre, su Amazon ed eBay.",
+      "url": "https://www.hdblog.it/ebay/offerte/n597130/migliori-5-offerte-oggi-amazon-ebay/",
+      "source": "hdblog",
+      "image": null,
+      "category": "general",
+      "language": "it",
+      "country": "it",
+      "published_at": "2024-10-23T16:35:00+00:00"
+    },
+    {
+      "author": null,
+      "title": "'Black Swan' ballerina Ashley Benefield reenacts fatal shooting of 'abusive' husband in shocking photos",
+      "description": "Ashley Benefield, 33, who was found guilty of manslaughter after fatally shooting her husband, participated in a reenactment of the killing.",
+      "url": "https://www.dailymail.co.uk/news/article-13987429/black-swan-ballerina-ashley-benefield-reenacts-shooting-husband-court-photos.html?ns_mchannel=rss&ito=1490&ns_campaign=1490",
+      "source": "dailymail",
+      "image": "https://i.dailymail.co.uk/1s/2024/10/22/21/91156101-0-image-m-83_1729629360688.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:34:58+00:00"
+    },
+    {
+      "author": "Page Six Video",
+      "title": "Harry Hamlin dishes on ‘his ‘Famous’ sauce recipe and time spent ‘In The Kitchen’",
+      "description": "Harry Hamlin, aka Mrs. Lisa Rinna stopped by the Page Six studios and sat with Astra to get a little &#8216;saucy&#8217; as he unveiled his new line of mouth-watering, unforgettable Rosemary red wine sauces. Harry&#8217;s Famous Sauce has become a Sunday family tradition that the actor is now sharing with the world. A large portion...",
+      "url": "https://pagesix.com/video/harry-hamlin-dishes-on-his-famous-sauce-recipe-and-time-spent-in-the-kitchen/",
+      "source": "Post",
+      "image": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2024%2F10%2FWP_47b2f4.jpg?quality%3D90%26strip%3Dall",
+      "category": "general",
+      "language": "en",
+      "country": "zm",
+      "published_at": "2024-10-23T16:34:58+00:00"
+    },
+    {
+      "author": "Alessio Baronci",
+      "title": "We Live in Time, di John Crowley",
+      "description": "La malattia è quasi l’interferenza di una rom com sulla prova più grande di una coppia. Ma resta ottima la prova di Andrew Garfield e Florence Pugh. RoFF19. Grand PublicL'articolo We Live in Time, di John Crowley proviene da SentieriSelvaggi.",
+      "url": "https://www.sentieriselvaggi.it/we-live-in-time-di-john-crowley/",
+      "source": "sentieriselvaggi",
+      "image": null,
+      "category": "general",
+      "language": "it",
+      "country": "it",
+      "published_at": "2024-10-23T16:34:56+00:00"
+    },
+    {
+      "author": "Dave DeCamp",
+      "title": "Two US Troops Injured During Raid Against ISIS in Iraq",
+      "description": "Two US troops were wounded in a raid against ISIS in central Iraq that was conducted with Iraqi government forces, US Central Command said on Wednesday. CENTCOM claimed seven ISIS fighters were killed in the raid, which it said was led by Iraqi forces. &#8220;During the Iraqi-led operation, two US military personnel were wounded while &#8230; Continue reading \"Two US Troops Injured During Raid Against ISIS in Iraq\"",
+      "url": "https://news.antiwar.com/2024/10/23/two-us-troops-injured-during-raid-against-isis-in-iraq/",
+      "source": "antiwar",
+      "image": null,
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:34:47+00:00"
+    },
+    {
+      "author": "Admin",
+      "title": "PNN hizo reconocimiento especial a la Reserva Natural de la sociedad civil de Valledupar",
+      "description": "Experiencia de Reserva Natural de la Sociedad Civil de Valledupar, presente en la COP 16 Se trata de la primeraThe post PNN hizo reconocimiento especial a la Reserva Natural de la sociedad civil de Valledupar first appeared on EL PAÍS VALLENATO.",
+      "url": "https://www.elpaisvallenato.com/2024/10/23/pnn-hizo-reconocimiento-especial-a-la-reserva-natural-de-la-sociedad-civil-de-valledupar/?utm_source=rss&utm_medium=rss&utm_campaign=pnn-hizo-reconocimiento-especial-a-la-reserva-natural-de-la-sociedad-civil-de-valledupar",
+      "source": "elpaisvallenato",
+      "image": null,
+      "category": "general",
+      "language": "es",
+      "country": "es",
+      "published_at": "2024-10-23T16:34:46+00:00"
+    },
+    {
+      "author": "Peter Fitzpatrick",
+      "title": "Barcelona vs Bayern Munich LIVE! Champions League match stream, latest team news, lineups, TV, prediction",
+      "description": "Hansi Flick looking for revenge against former club",
+      "url": "https://www.standard.co.uk/sport/football/fc-barcelona-vs-bayern-munich-live-stream-champions-league-2024-latest-score-result-watch-tv-team-news-b1189663.html",
+      "source": "thisislondon",
+      "image": "https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/08/09/11/barcelonabayern090820b.png?width=1200&auto=webp",
+      "category": "general",
+      "language": "en",
+      "country": "uk",
+      "published_at": "2024-10-23T16:34:43+00:00"
+    },
+    {
+      "author": "Trevor",
+      "title": "SMPD Needs Assistance Locating Assault Suspect",
+      "description": "SANTA MONICA—On Tuesday, October 22, Lt. Erika Aklufi of the Santa Monica Police Department informed Canyon News via email that they are seeking the public’s help in locating a suspect who assaulted an individual. Authorities have released video of the suspect to the public. The incident transpired back on Sunday, September 22 at 12:35 a.m. [&#8230;]The post SMPD Needs Assistance Locating Assault Suspect appeared first on Canyon News.",
+      "url": "https://www.canyon-news.com/smpd-needs-assistance-locating-assault-suspect/187728",
+      "source": "canyon-news",
+      "image": "https://www.santamonica.gov/media/Police/suspects/SMPD%20Community%20Assistance%20-%20Sept%2022%20Incident.mp4",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:34:40+00:00"
+    },
+    {
+      "author": "Redazione TRC",
+      "title": "Berlinguer a Civitavecchia. Un ricordo",
+      "description": "di FLAVIO MARTINO Alla vigilia della presentazione del libro &#8220;Opposizione, l’ultima battaglia di Enrico Berlinguer&#8221;, scritto da Luca Telese, vale forse la pena di ricordare il rapporto tra il più amato segretario del Pci e Civitavecchia, avvalendoci anche delle bellissime foto dell&#8217;amico Gianni Tassi. In città Berlinguer aveva un&#8217;antica amicizia con Bruno Bergantini, popolare tassista, [&#8230;]",
+      "url": "https://trcgiornale.it/berlinguer-a-civitavecchia-un-ricordo/",
+      "source": "trcgiornale",
+      "image": null,
+      "category": "general",
+      "language": "it",
+      "country": "it",
+      "published_at": "2024-10-23T16:34:31+00:00"
+    },
+    {
+      "author": "jennastanley",
+      "title": "Whippets take win over Leake Central ready for.  Houston",
+      "description": "Whippets take win over Leake Central ready for.&nbsp; HoustonjennastanleyWed, 10/23/2024 - 11:34 AM",
+      "url": "https://www.starherald.net/local-content-local-sports/whippets-take-win-over-leake-central-ready-houston",
+      "source": "starherald",
+      "image": null,
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:34:26+00:00"
+    },
+    {
+      "author": "BusinessWorld",
+      "title": "PCCI issues job, investment wish list",
+      "description": "PRESIDENT Ferdinand R. Marcos, Jr. should identify barriers to business operations, develop an infrastructure master plan, enact a comprehensive investment bill and digitize local government services to generate more investments and jobs, according to the Philippine Chamber of Commerce and Industry (PCCI).",
+      "url": "https://www.bworldonline.com/top-stories/2024/10/24/630281/pcci-issues-job-investment-wish-list/",
+      "source": "Business World",
+      "image": "https://www.bworldonline.com/wp-content/uploads/2024/10/Job-fair-applicant-300x200.jpg",
+      "category": "business",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:34:26+00:00"
+    },
+    {
+      "author": "Jon Duarte",
+      "title": "Shelton Benjamin: «Bobby Lashley sería una victoria para AEW»",
+      "description": "Shelton Benjamin comenta la posibilidad de que Bobby Lashley se una también a AEW.",
+      "url": "https://superluchas.com/shelton-benjamin-bobby-lashley-seria-una-victoria-para-aew/",
+      "source": "superluchas",
+      "image": null,
+      "category": "general",
+      "language": "es",
+      "country": "es",
+      "published_at": "2024-10-23T16:34:26+00:00"
+    },
+    {
+      "author": "New York Post Video",
+      "title": "Watch Live: JD Vance holds rally in Las Vegas",
+      "description": "Republican vice presidential nominee JD Vance is scheduled to speak to supporters at 1 ET in Las Vegas, the first of two campaign stops today in Nevada for Senator Vance.",
+      "url": "https://nypost.com/video/watch-live-jd-vance-holds-rally-in-las-vegas/",
+      "source": "Post",
+      "image": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2024%2F10%2Fvance.png",
+      "category": "general",
+      "language": "en",
+      "country": "zm",
+      "published_at": "2024-10-23T16:34:23+00:00"
+    },
+    {
+      "author": "Curtis Jackson",
+      "title": "Forest Service to burn slash piles in Ashton-Island Park Ranger District",
+      "description": "The following is a news release from Caribou-Targhee National Forest. FREMONT COUNTY, Idaho (Caribou-Targhee National Forest News Release) – Caribou-Targhee fire personnel plan to implement controlled burns of slash piles in various locations within the Ashton/Island Park District, commencing as early as October 28, 2024. These burns are expected to continue through the end of December,",
+      "url": "https://localnews8.com/news/2024/10/23/forest-service-to-burn-slash-piles-in-ashton-island-park-ranger-district/",
+      "source": "localnews8",
+      "image": null,
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2024-10-23T16:34:22+00:00"
+    }
 ]

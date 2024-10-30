@@ -1,0 +1,14 @@
+<a [href]="article.url" target="_blank">
+  <div class="mini">
+    <img *ngIf="article.image" [src]="article.image">
+    <img *ngIf="!article.image" src="assets/images/news1.png">
+    <div class="mini-details">
+      <div class="title">{{article.title}}</div>
+      <div class="published-on">
+        <span>{{article.author}}</span>
+        Published on: {{publishedOn}} ({{publishedTimeAgo}})
+      </div>
+    </div>
+  </div>
+</a>
+<hr>

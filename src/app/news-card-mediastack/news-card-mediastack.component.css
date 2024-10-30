@@ -6,7 +6,6 @@
   overflow: none;
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .article-wrapper {
@@ -51,22 +50,9 @@
   color: 0;
   z-index: 10;
   color: white;
-  background: rgba(0,0,0,0.3);
-  padding-left: 10px;
 }
 
 .article:hover img {
   transform: scale(1.1);
   opacity: 0.8;
-}
-
-.source-name {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  z-index: 1000;
-  color: white;
-  pointer-events: none;
 }

@@ -25,10 +25,6 @@
   margin: 0 auto;
 }
 
-.test {
-  width: 500px;
-  height: 1000px;
-}
 
 .carousel-button {
   position: absolute;
@@ -42,13 +38,12 @@
   border: none;
   border-radius: .25rem;
   cursor: pointer;
-  background-color: rgba(0,0,0, .4);
+  background-color: rgba(0,0,0, .65);
   padding: 0 .5rem 0.5rem .5rem;
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
-  background-color: rgba(0,0,0, .55);
+.carousel-button:hover {
+  background-color: rgba(0,0,0, .85);
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -60,11 +55,21 @@
   left: .4rem;
 }
 
+.disable-button {
+  background-color: rgba(0,0,0, .35) !important;
+  cursor: default !important;
+}
+
 .country-selection {
+  font-size: 1.2rem;
   padding: 0 0 .5rem .3rem ;
   display: flex;
   gap: .6rem;
   align-items: center;
+}
+
+.country-selection * {
+  font-size: 1.2rem;
 }
 
 .country-selection select {
@@ -104,20 +109,27 @@
   font-size: 1.2rem;
 }
 
-.queried-articles-container {
+.queried-articles-container, .country-selection-wrapper {
   min-height: 77rem;
   margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.main-content {
+  max-width: 50rem;
+  background-color: white;
+}
+
+.tabs-wrapper {
+  padding-bottom: 50px;
+}
+
+.latest-news-error {
+  color: red;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 mat-paginator {
-  background-color: rgb(194, 194, 194);
-}
-
-
-.mat-tab-group .mat-tab-label {
-  color: black !important;
-}
-
-.mat-tab-group .mat-tab-label.mat-tab-label-active {
-  color: white !important;
+  font-size: 20px;
 }
